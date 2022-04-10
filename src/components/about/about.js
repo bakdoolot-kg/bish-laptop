@@ -4,6 +4,7 @@ import {Row, Col, Button} from 'antd'
 import './about.css'
 import cardImage from './images/apple-card-image.png'
 import accessories from './images/accessories.jpg'
+import winkingFace from './images/winking-face.png'
 import {ArrowIosForwardOutline} from '@styled-icons/evaicons-outline/ArrowIosForwardOutline'
 
 const About = () => {
@@ -11,10 +12,17 @@ const About = () => {
   return (
     <div className='about' id='about'>
       <Row>
-        <Col xl={24} className='about-col-4'>text and image</Col>
+        <Col xl={24} className='about-col-4'>
+          {/*<img src={montereyBg} alt=""/>*/}
+          <h3>macOS Monterey</h3>
+          <div className='about-col-4-face'>
+            <p>Мощный встречает</p>
+            <img className='about-col-4-emoji' src={winkingFace} alt=""/>
+          </div>
+        </Col>
 
         <Col xl={10} className='about-col-3'>
-          <h3>Аксессуары для Mac</h3>
+          <h3 className='about-col-3-title'>Аксессуары для Mac</h3>
           <div><img src={accessories} alt=""/></div>
           <Button className='about-col-3-btn' type='link'>Посмотреть {<ArrowIosForwardOutline/>}</Button>
         </Col>

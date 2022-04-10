@@ -3,7 +3,6 @@
     color: #ffffff;
     text-align: center;
     margin-top: 50px;
-    padding-top: 50px;
 }
 
 
@@ -34,7 +33,7 @@
 
 /* COLUMN 2 */
 .about-col-2 {
-    margin-top: 45px;
+    margin-top: 60px;
 }
 
 .about-col-2 img {
@@ -56,6 +55,7 @@
     font-size: 30px;
     font-weight: 700;
     color: #ffffff;
+    margin-top: 40px;
 }
 
 .about-col-3-btn {
@@ -66,5 +66,35 @@
 }
 
 .about-col-3-btn svg {
-    max-width: 25%;
+    max-width: 25%;;
 }
+
+/* COL 4 */
+.about-col-4 {
+    height: 100px;
+    background: url("./images/bg_monterey.jpg") no-repeat center/100%;
+}
+
+.about-col-4 h3 {
+    font-size: 35px;
+    color: #ffffff;
+    margin: 10px 0 0;
+}
+
+.about-col-4-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-col-4 p {
+    margin: 0 5px 0;
+    font-size: 16px;
+}
+
+.about-col-4-emoji {
+    display: inline-block;
+    max-width: 25px;
+    max-height: 25px;
+}
+

@@ -1,0 +1,22 @@
+.contacts {
+    margin-top: 50px;
+}
+
+.contacts-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contacts h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 6px;
+}
+
+.contacts-title-emoji {
+    display: inline-block;
+    max-width: 25px;
+    max-height: 25px;
+}

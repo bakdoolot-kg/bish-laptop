@@ -1,17 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import App from './components/app/App';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './fonts/SFPro/SF-Pro-Display-Black.otf'
+import './fonts/SFPro/SF-Pro-Display-Bold.otf'
+import './fonts/SFPro/SF-Pro-Display-Heavy.otf'
+import './fonts/SFPro/SF-Pro-Display-Light.otf'
+import './fonts/SFPro/SF-Pro-Display-Medium.otf'
+import './fonts/SFPro/SF-Pro-Display-Regular.otf'
+import './fonts/SFPro/SF-Pro-Display-Semibold.otf'
+import './fonts/SFPro/SF-Pro-Display-Thin.otf'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import {createRoot} from "react-dom/client";
+const container = document.getElementById('root')
+const root = createRoot(container)
+root.render(<App/>)

@@ -1,0 +1,122 @@
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/*Main block ===============*/
+.services-main {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-main-map img {
+    border-radius: 10px;
+    max-width: 30rem;
+}
+
+.services-main-title {
+    font-weight: 600;
+}
+
+.services-main-icon svg {
+    font-size: 40px;
+}
+
+/* Left block ==============*/
+.services-left {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.services-left-cart {
+    margin-bottom: 20px;
+}
+
+.services-left-image {
+    display: flex;
+    justify-content: center;
+}
+
+.services-left-image img {
+    max-width: 50%;
+}
+
+.services-left-content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.services-left-content div {
+    display: inline-flex;
+    align-items: flex-start;
+    font-size: 18px;
+}
+
+.services-left-content p {
+    font-weight: 500;
+    padding-right: 10px;
+    margin-left: 30px;
+}
+
+.services-left-content-chip img {
+    max-width: 50%;
+    margin-left: -20px;
+}
+
+.services-left-content svg {
+    max-width: 1rem;
+}
+
+/* Right block ================*/
+.services-right {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.services-right-cart {
+    margin-bottom: 20px;
+}
+
+.services-right-image {
+    display: flex;
+    justify-content: center;
+}
+
+.services-right-image img {
+    max-width: 50%;
+}
+
+.services-right-content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 18px;
+}
+
+.services-right-content div {
+    display: inline-flex;
+    align-items: flex-start;
+    font-size: 18px;
+}
+
+.services-right-content-chip img {
+    max-width: 50%;
+    margin-left: -20px;
+}
+
+.services-right-content p {
+    font-weight: 500;
+    padding-right: 10px;
+    margin-left: 30px;
+}
+
+.services-right-content svg {
+    max-width: 1rem;
+}
+

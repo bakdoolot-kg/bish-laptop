@@ -1,0 +1,34 @@
+.header-logo {
+    display: block;
+    font-size: 19px;
+}
+
+.ant-layout-header {
+    background-color: rgba(29,29,31,0.72) !important;
+}
+
+.ant-anchor {
+    display: flex;
+    padding-right: 40px;
+}
+
+.ant-anchor-link-title {
+    color: #ffffff;
+}
+
+.ant-anchor-link .ant-anchor-link-title {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.ant-btn .ant-btn-link span {
+    color: #ffffff;
+}
+
+.ant-anchor div {
+    margin-right: 20px;
+}
+
+.ant-anchor div:last-child {
+    margin-right: 0;
+}

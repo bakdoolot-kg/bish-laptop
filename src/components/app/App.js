@@ -1,5 +1,4 @@
 import {Anchor, Layout, Button} from "antd";
-import {BoldOutlined } from '@ant-design/icons'
 import React from "react";
 import './App.css';
 import 'antd/dist/antd.css';
@@ -7,6 +6,7 @@ import Home from "../home";
 import Services from "../services";
 import About from "../about";
 import Contacts from "../contacts";
+import Job from "../job";
 
 const {Footer, Header, Content} = Layout
 const {Link} = Anchor
@@ -14,7 +14,7 @@ const {Link} = Anchor
 function App() {
   return (
     <>
-      <Layout id='#main'>
+    <Layout id='#main'>
         <Header
           // title={<NavLink to='/'><img src={macLogo} alt=""/></NavLink>}
           style={{position: 'fixed',display: 'flex', justifyContent: 'space-between',alignItems: 'center', zIndex: 1, width: '100%', color: "#ffffff"}}
@@ -26,16 +26,18 @@ function App() {
             <Link href='#products' title='Товары'/>
             <Link href='#about' title='О нас'/>
             <Link href='#contacts' title='Контакты'/>
-            <Link href='#feedback' title='Отзывы'/>
-            <Link href='#team' title='Команда'/>
+            <Link href='#jobs' title='Вакансии'/>
+            {/*<Link href='#feedback' title='Отзывы'/>*/}
+            {/*<Link href='#team' title='Команда'/>*/}
           </Anchor>
         </Header>
 
         <Content style={{ marginTop: 64}} className='main-container'>
-          <Home/>
-          <Services/>
-          <About/>
-          <Contacts/>
+              <Home/>
+              <Services/>
+              <About/>
+              <Contacts/>
+              <Job/>
         </Content>
 
         <Footer style={{textAlign: 'center'}}>Bish laptop ©2022 Created by Ant UED</Footer>

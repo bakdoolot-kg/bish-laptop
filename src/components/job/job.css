@@ -1,0 +1,15 @@
+.job {
+    margin-top: 100px;
+}
+
+.job-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+    padding: 10px 0;
+    color: #ffffff;
+}
+
+.jobs-list-item svg {
+    max-width: 25%;
+}

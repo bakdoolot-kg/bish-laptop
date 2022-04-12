@@ -17,7 +17,7 @@ const About = () => {
           <h3>macOS Monterey</h3>
           <div className='about-col-4-face'>
             <p>Мощный встречает</p>
-            <img className='about-col-4-emoji' src={winkingFace} alt=""/>
+            {/*<img className='about-col-4-emoji' src={winkingFace} alt=""/>*/}
           </div>
         </Col>
 

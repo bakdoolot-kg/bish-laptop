@@ -1,9 +1,11 @@
-import { Button, Card, Descriptions, List, Typography } from "antd";
+import { Anchor, Button, Card, Descriptions, List, Typography } from "antd";
 import React from "react";
 import { NavLink, useHistory, useParams } from "react-router-dom";
 import { LineOutlined, ArrowLeftOutlined } from '@ant-design/icons'
+import './job-details.css'
 
 const { Title, Text } = Typography
+const { Link } = Anchor
 
 const JobDetails = ({ match, dataJob }) => {
   // const id = Number(match.params.id);
@@ -15,6 +17,10 @@ const JobDetails = ({ match, dataJob }) => {
 
   return (
     <>
+      {/*<Anchor style={{ color: '#000000' }} affix={false} className="job-details-anchor">*/}
+      {/*  <Link href='/#jobs' className="job-details-anchor-link" style={{ fontSize: '25px', margin: '20px', padding: '20px' }} title='К списку вакансий' />*/}
+      {/*</Anchor>*/}
+
       <NavLink to='/' style={{ fontSize: '25px', margin: '20px', padding: '20px' }}>{<ArrowLeftOutlined />} К списку вакансий</NavLink>
 
       <div className='job-details' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>

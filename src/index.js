@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from './components/app/App';
 import JobsPage from "./components/pages/jobs-page";
+import JobDetails from "./components/job-details";
+import { dataJob } from './components/job/job';
 
 import './index.css';
 import './fonts/SFPro/SF-Pro-Display-Black.otf'
@@ -17,13 +19,9 @@ import './fonts/SFPro/SF-Pro-Display-Thin.otf'
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App/>}/>
-      <Route path='jobs/:title' exact render={({match}) => {
-        const selectedItemId = match.params.id;
-        return <JobsPage selectedItemId={selectedItemId} />
-      }}/>
+      <Route path='/' exact element={<App />} />
+      <Route path='/jobs/:id' exact element={<JobDetails dataJob={dataJob} />} />
     </Routes>
-    {/*<App />*/}
   </BrowserRouter>,
   document.getElementById("root")
 )

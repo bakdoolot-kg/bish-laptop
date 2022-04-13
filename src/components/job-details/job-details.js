@@ -15,7 +15,7 @@ const JobDetails = ({ match, dataJob }) => {
 
   return (
     <>
-      <NavLink to='/#jobs' style={{ fontSize: '25px', margin: '20px', padding: '20px' }}>{<ArrowLeftOutlined />} К списку вакансий</NavLink>
+      <NavLink to='/' style={{ fontSize: '25px', margin: '20px', padding: '20px' }}>{<ArrowLeftOutlined />} К списку вакансий</NavLink>
 
       <div className='job-details' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>
 
